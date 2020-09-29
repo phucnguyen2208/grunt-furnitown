@@ -1,0 +1,120 @@
+
+.services {
+    padding: 100px 0 50px;
+    .container {
+        max-width: 1030px;
+        margin: auto;
+    }
+    &__title {
+        h2 {
+            font-size: 32px;
+            line-height: 50px;
+            color: $text-black-cl;
+            text-align: center;
+            margin: 20px 0;
+            text-transform: uppercase;
+            font-family: EB;
+        }
+        &--img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .left-text {
+        padding: 30px;
+        text-align: left;
+        h3 {
+            font-size: 26px;
+            line-height: 32px;
+            color: $text-cl;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: EB;
+        }
+        .content {
+            font-size: 12px;
+            line-height: 28px;
+            color: $text-cl;
+            text-transform: none;
+            letter-spacing: 1px;
+            p {
+                margin: 0 0 10px;
+            }
+        }
+        
+    }
+    .contact-box {
+        text-align: center;
+        width: auto;
+        margin: 90px auto 0;
+    }
+    .line-row {
+        width: 100%;
+        height: 1px;
+        background: #ddd;
+        margin: 20px 0;
+    }
+    .text-bottom {
+        h3 {
+            font-size: 26px;
+            line-height: 32px;
+            color: $text-cl;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 20px 0 10px;
+            font-family: EB;
+        }
+        .content {
+            width: 630px;
+            max-width: 100%;
+            margin: auto;
+            font-size: 12px;
+            line-height: 26px;
+            color: $text-cl;
+            letter-spacing: 1px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        .text-img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    @include desktop {
+
+    }
+    @include tablet {
+        padding-top: 50px;
+    }
+    @include mobile {
+        &__title {
+            padding-top: 30px;
+            h2 {
+                font-size: 28px;
+            }
+        }
+        .left-text {
+            text-align: center;
+        }
+        .contact-box {
+            margin: 0;
+        }
+        .text-bottom {
+            width: 100%;
+            .content {
+                width: 376px;
+                text-align: center;
+            }
+        }
+    }
+    @include mobile-xxs {
+        
+    }
+}

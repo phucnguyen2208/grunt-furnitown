@@ -1,0 +1,150 @@
+
+#content-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page-contact {
+    background: url('../img/bg-contact.png') no-repeat fixed;
+    background-size: cover;
+    .header {
+        a {
+            color: $white-cl;
+        }
+
+    }      
+}
+
+
+
+.section-contact {
+    padding: 100px 0;
+    .container {
+        max-width: 1030px;
+        margin: auto;
+        color: $white-cl;
+        .box {
+            padding-bottom: 40px;
+            h4 {
+                font-size: 12px;
+                line-height: 18px;
+                color: $yl-cl;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+                margin: 10px 0;
+            }
+            .address {
+                padding-top: 10px;
+                .text {
+                    line-height: 18px;
+                }
+            }
+            .e-mail {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+        }
+        .text {
+            font-size: 12px;
+            line-height: 22px;
+            text-transform: none;
+            letter-spacing: 1px;
+        }
+        .form {
+            margin-top: 30px;
+            .field {
+                margin-bottom: 20px;
+                label {
+                    font-size: 12px;
+                    font-family: arial;
+                    line-height: 40px;
+                    color: $white-cl;
+                    text-transform: none;
+                    letter-spacing: 1px;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                input {
+                    width: 100%;
+                    background: 0 0;
+                    border-top: 0;
+                    border-right: 0;
+                    border-left: 0;
+                    border-bottom: 1px solid #7c6e4f;
+                    outline: 0;
+                    line-height: 18px;
+                    color: $white-cl;
+                }
+                textarea {
+                    height: 85px;
+                    width: 100%;
+                    line-height: 24px;
+                    border: none;
+                    outline: none;
+                    padding: 5px;
+                }
+            }
+            .btn-contact {
+                width: 100px;
+                text-align: center;
+                background: $text-black-cl;
+                border: 1px solid #d4cebf;
+                cursor: pointer;
+                float: right;
+                margin-top: 10px;
+                &:hover {
+                    background: $white-cl;
+                    transition: 0.5s;
+                }
+                span {
+                    display: block;
+                    padding: 11px 30px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: normal;
+                    color: $white-cl;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $text-black-cl;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    @include desktop {
+
+    }
+    @include tablet {
+    
+    }
+    @include mobile {
+        .container {
+            .row {
+                .offset-2 , .offset-1 {
+                    margin: 0;
+                }
+                .box {
+                    padding-bottom: 0;
+                    .e-mail {
+                        letter-spacing: 1px;
+                    }
+                }
+                .text {
+                    margin: 10px 0 0;
+                }
+                .form {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    @include mobile-xxs {
+        
+    }
+}
