@@ -66,14 +66,7 @@
         }
     }
 
-
-
-    @include desktop {
-
-    }
-    @include tablet {
     
-    }
     @include mobile {
         padding-top: 30px;
         &__main {
@@ -82,12 +75,10 @@
                 padding: 20px 7% 100px;
             }
             .backtop {
-                right: -23px;
+                right: -15px;
                 bottom: -20px;
             }
         }
     }
-    @include mobile-xxs {
-        
-    }
+    
 }

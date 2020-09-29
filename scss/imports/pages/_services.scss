@@ -87,9 +87,6 @@
 
 
 
-    @include desktop {
-
-    }
     @include tablet {
         padding-top: 50px;
     }
@@ -113,8 +110,5 @@
                 text-align: center;
             }
         }
-    }
-    @include mobile-xxs {
-        
     }
 }

@@ -117,12 +117,7 @@
 
 
 
-    @include desktop {
 
-    }
-    @include tablet {
-    
-    }
     @include mobile {
         .container {
             .row {
@@ -143,8 +138,5 @@
                 }
             }
         }
-    }
-    @include mobile-xxs {
-        
     }
 }
