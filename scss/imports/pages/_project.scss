@@ -1,0 +1,198 @@
+
+.header {
+    .header-while {
+        a {
+            color: $white-cl;
+        }
+    }
+}
+
+.page-project {
+    background: url(../img/banner_projects.jpg) no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    .container {
+        max-width: 1030px;
+        h3 {
+            width: 50%;
+            font-size: 24px;
+            line-height: 50px;
+            letter-spacing: 1px;
+            color: $white-cl;
+            text-transform: uppercase;
+            float: right;
+            padding-top: 140px;
+            margin: 0;
+            font-family: EB;
+        }
+    }
+
+    @include tablet {
+        height: 350px;
+        .container {
+            h3 {
+                width: 65%;
+                padding-top: 100px;
+                line-height: 40px;
+            }
+        }
+    }
+    @include mobile {
+        .container {
+            h3 {
+                width: 100%;
+                padding-top: 144px;
+                font-size: 18px;
+                line-height: 34px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.section-project {
+    margin: 50px 0;
+    overflow: hidden;
+    .container {
+        max-width: 1030px;
+        h4 {
+            font-size: 26px;
+            text-transform: uppercase;
+            line-height: 50px;
+            font-family: EB;
+        }
+        .des {
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 26px;
+        }
+        .line-row {
+            width: 100%;
+            height: 1px;
+            background: #ddd;
+            margin: 30px 0;
+        }
+        .select {
+            float: right;
+            &-style {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                color: $white-cl;
+                width: 220px;
+                height: 40px;
+                text-align: left;
+                font-size: 13px;
+                text-transform: uppercase;
+                background: $text-black-cl;
+            }
+            &-styled {
+                padding: 12px 15px 12px 30px;
+                &::after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border: 7px solid transparent;
+                    border-color: #fff transparent transparent;
+                    position: absolute;
+                    top: 16px;
+                    right: 12px;
+                }
+                &.updown {
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border: 7px solid transparent;
+                        border-color: #fff transparent transparent;
+                        position: absolute;
+                        top: 8px;
+                        right: 12px;
+                        transform: rotate(180deg);
+                    }
+                }
+                p {
+                    line-height: 17px;
+                }
+            }
+            &-option {
+                height: auto;
+                z-index: 999;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                background-color: $white-cl;
+                position: absolute;
+                width: 100%;
+                top: 37px;
+                display: none;
+                li {
+                    margin: 0;
+                    padding: 15px;
+                    text-indent: 15px;
+                    border-bottom: 1px solid #514223;
+                    background: #705b32;
+                    color: $white-cl;
+                }
+                &.show {
+                    display: block;
+                }
+            }
+        }
+        .project__list {
+            overflow: hidden;
+            .item {
+                border-right: 1px solid #ddd;
+                outline: 0;
+                padding-bottom: 50px;
+                .project-img {
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        transition: 0.5s;
+                        &:hover {
+                            transform: scale(1.1);
+                            transition: 0.5s;
+                        }
+                    }
+                }
+                h2 {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    line-height: 20px;
+                    margin: 20px 0 10px;
+                    transition: 0.5s;
+                }
+                p {
+                    font-size: 12px;
+                    text-transform: none;
+                    letter-spacing: 0.5px;
+                    margin: 0;
+                    padding-bottom: 20px;
+                    line-height: 20px;
+                }
+                &:hover {
+                    h2 {
+                        color: $yl-cl;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+    
+    @include mobile {
+        .container {
+            .select {
+                text-align: center;
+                float: inherit;
+                padding-top: 30px;
+            }
+        }
+    }
+    
+}
